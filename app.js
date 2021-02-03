@@ -1,6 +1,13 @@
-var message = 'Hello Node!';
+const fs = require('fs');
 
-var sum = 5 + 3;
+const generatePage = require('./src/page-template.js');
 
-console.log(message);
-console.log(sum);
+const profileDataArgs = process.argv.slice(2);
+
+const [name, github] = profileDataArgs;
+
+fs.writeFile('./index.html', generatePage(name, github), err => {
+  if (err) throw new Error(err);
+
+  console.log('Portfolio complete! Check out index.html to see the output!');
+});
