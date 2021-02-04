@@ -26,16 +26,16 @@ const generateProjects = projectsArr => {
         h3 class = "portfolio-item-title text-light" > $ {
             name
         } < /h3> <
-        h5 class = "portfolio-languages" >
+    h5 class = "portfolio-languages" >
         Built With:
         $ {
             languages.join(', ')
         } <
         /h5> <
-        p > $ {
-            description
-        } < /p> <
-        a href = "${link}"
+    p > $ {
+        description
+    } < /p> <
+    a href = "${link}"
     class = "btn" > < i class = "fab fa-github mr-2" > < /i>View Project on GitHub</a >
         <
         /div>
@@ -52,16 +52,16 @@ const generateProjects = projectsArr => {
         h3 class = "portfolio-item-title text-light" > $ {
             name
         } < /h3> <
-        h5 class = "portfolio-languages" >
+    h5 class = "portfolio-languages" >
         Built With:
         $ {
             languages.join(', ')
         } <
         /h5> <
-        p > $ {
-            description
-        } < /p> <
-        a href = "${link}"
+    p > $ {
+        description
+    } < /p> <
+    a href = "${link}"
     class = "btn mt-auto" > < i class = "fab fa-github mr-2" > < /i>View Project on GitHub</a >
         <
         /div>
